@@ -17,6 +17,7 @@ class MusicLibraryController
     puts  "What would you like to do?"
     input = gets.strip
   end
+  end
 
   def list_songs
       Song.all.sort_by{|song| song.name}.each.with_index(1) {|song,index|
