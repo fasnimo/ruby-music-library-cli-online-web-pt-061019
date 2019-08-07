@@ -3,7 +3,7 @@ class MusicLibraryController
   def initialize(path="./db/mp3s")
     MusicImporter.new(path).import
   end
-
+  input = ""
   def call
 
     while input != "exit"
