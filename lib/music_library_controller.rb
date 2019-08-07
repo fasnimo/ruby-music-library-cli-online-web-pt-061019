@@ -27,7 +27,7 @@ class MusicLibraryController
 
   end
 
-  def list_artist
+  def list_artists
       Artist.all.sort_by { |artist| artist.name }.each.with_index(1) { |artist,index|
       puts "#{index}. #{artist.name}"
     }
