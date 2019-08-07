@@ -19,21 +19,21 @@ class MusicLibraryController
   end
 
   def list_songs
-      Song.all.sort_by {|song| song.name}.each.with_index(1) {|song,index|
+      Song.all.sort_by { |song| song.name }.each.with_index(1) { |song,index|
       puts "#{index}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
     }
 
   end
 
   def list_artist
-      Artist.all.sort_by {|artist| artist.name}.each.with_index(1) {|artist,index|
+      Artist.all.sort_by { |artist| artist.name }.each.with_index(1) { |artist,index|
       puts "#{index}. #{artist.name}"
     }
 
   end
 
   def list_genres
-      Genre.all.sort_by{|genre| genre.name}.each.with_index(1) {|genre,index|
+      Genre.all.sort_by { |genre| genre.name }.each.with_index(1) { |genre,index|
       puts "#{index}. #{genre.name}"
     }
 
