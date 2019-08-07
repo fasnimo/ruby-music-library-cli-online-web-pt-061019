@@ -59,5 +59,4 @@ class MusicLibraryController
      }
      end
   end
-genre
 end
