@@ -1,6 +1,6 @@
 require 'pry'
 class Song
-  
+
   attr_accessor :name
 
     @@all = []
@@ -27,6 +27,7 @@ class Song
   def self.create(name)
     songs = Song.new(name)
     song.save
+    song
   end
 
   def artist=(artist)
